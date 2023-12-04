@@ -22,3 +22,20 @@ const correct1 = (string) => {
     
 console.log(correct1("51NGAP0RE"));
 
+//========================3 way==================================
+
+function correct2(string) {
+	const map = {
+		0: "O",
+		1: "I",
+		5: "S"
+	};
+	
+	return string
+		.split("")
+		.map(c => map.hasOwnProperty(c) ? map[c] : c)
+		.join("");
+}
+
+console.log(correct2("51NGAP0RE"));
+
