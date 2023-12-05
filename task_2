@@ -1,3 +1,6 @@
+
+//========================1 way==================================
+
 function hello(name) {
     !name
     ?name='World'
@@ -6,3 +9,10 @@ function hello(name) {
 }
 
 console.log(hello('john'))
+
+//========================2 way==================================
+
+function hello(name) {
+    return `Hello, ${name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
+  }
+  
