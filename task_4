@@ -1,3 +1,5 @@
+//========================1 way==================================
+
 function multiTable(number) {
     let string = []
     for(let i = 1; i<=10; i++){
@@ -6,3 +8,13 @@ function multiTable(number) {
   return string.join('\n')
 }
 console.log(multiTable(5))
+
+//========================2 way==================================
+
+function multiTable(number) {
+    let table = '';
+    for(let i = 1; i <= 10; i++){
+      table += `${i} * ${number} = ${i*number}\n`
+    }
+    return table.slice(0, -1)
+  }
