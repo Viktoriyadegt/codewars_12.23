@@ -1,3 +1,5 @@
+
+//========================1 way==================================
 function findOdd(A) {
     let a
     for (let i = 0; i <= A.length;) {
@@ -10,3 +12,7 @@ function findOdd(A) {
 }
 
 console.log(findOdd([0, 1, 0]))
+
+//========================2 way==================================
+
+const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
