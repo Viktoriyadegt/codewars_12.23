@@ -1,0 +1,12 @@
+function findOdd(A) {
+    let a
+    for (let i = 0; i <= A.length;) {
+        if (A.filter(f => f === A[i]).length % 2 !== 0) {
+            a = A[i]
+            return a
+        }
+        i++
+    }
+}
+
+console.log(findOdd([0, 1, 0]))
