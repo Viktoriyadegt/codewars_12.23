@@ -1,3 +1,13 @@
+  
+  //========================1 way==================================
+  
   function reverseWords(str) {
         return str.split(' ').map(m => m.split('').reverse().join('')).join(' ')
+    }
+
+
+//========================2 way==================================
+
+    function reverseWords(str) {
+        return str.split("").reverse().join("").split(" ").reverse().join(" ");
     }
