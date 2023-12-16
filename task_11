@@ -1,0 +1,4 @@
+    function unusualFive() {
+        const a='masha'
+        return a.length;
+    }
