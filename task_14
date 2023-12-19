@@ -1,0 +1,6 @@
+    function isSortedAndHow(array) {
+        let str = array.join()
+        let ascend = array.sort((a, b) => a - b).join()
+        let descend = array.sort((a, b) => b - a).join()
+        return str === ascend ? "yes, ascending" : str === descend ? "yes, descending" : "no"
+    }
