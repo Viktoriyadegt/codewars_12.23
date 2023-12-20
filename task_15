@@ -1,6 +1,13 @@
-    function stray(numbers) {
+       //========================1 way==================================
+  
+  function stray(numbers) {
         const sortArray = numbers.sort()
         return sortArray[0] !== sortArray[1]
             ? sortArray[0]
             : sortArray[sortArray.length - 1]
     }
+
+
+    //========================2 way==================================
+
+    const stray = nums => nums.reduce((a, b) => a ^ b);
